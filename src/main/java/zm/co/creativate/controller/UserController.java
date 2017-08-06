@@ -39,7 +39,7 @@ public class UserController {
 	 * @return
 	 */
 	@RequestMapping(path = "/user/add", method=RequestMethod.POST)
-	public String addUser_action(){
+	public String addUser_action(@ModelAttribute("user") User user){
 		
 		//System.out.println(user);
 		
